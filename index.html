@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://kit.fontawesome.com/78e8741438.js" crossorigin="anonymous"></script>
         <style>
           .contact-details p {
             margin-bottom: -5px;
@@ -15,6 +17,7 @@
 
           body{
             font-family: 'Tinos', serif;
+            font-size: 14px;
           }
 
           .container  {
@@ -39,20 +42,26 @@
           }
         </style>
     </head>
-    <body>
+    <body id="body">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <a class="navbar-brand" href="#">
                 <img src="samin.jpg" alt="photo">
+
+
             </a>
+
               <div class="contact">
                 <h4 class="text-center">Samin Batra</h4>
 
                 <p class="text-center"><strong>Contact:</strong> +91-9810116672</p>
                 <p class="text-center"><strong>Email:</strong> saminbatra1@gmail.com</p>
-
               </div>
+              <!-- <button onclick="generatePdf()">
 
+                <i class="fa fa-download" aria-hidden="true"></i>
+
+              </button> -->
             </nav>
           <h5>Key Competencies</h5>
           <hr>
@@ -95,6 +104,21 @@
                   </td>
               </tr>
               <tr>
+                <td>
+                </td>
+
+                <td>
+                  <ul>
+                    <li>
+                      Awarded partial scholarship in academics from the university due to strong performance in high school and entrance exams
+                    </li>
+                    <li>
+                      Maintained a high GPA while also staying actively involved in extra-curricular activities like art, sports and event management
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
                   <td>
                       <strong>
                           2004-2014
@@ -109,6 +133,23 @@
                   <td>
                       New Delhi, India
                   </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      Headed the School Science Club for 2 years. Led the NASA Space Settlement Project designs which were submitted to NASA as part of a competition.
+                    </li>
+                    <li>
+                      Represented the school at the JICE Youth Summit in Tokyo, Japan in 2010.
+                    </li>
+                    <li>
+                      Maintained high academic performance throughout high school
+                    </li>
+                  </ul>
+                </td>
               </tr>
           </table>
           <h5>Work Experience</h5>
@@ -244,4 +285,17 @@
         </div>
 
     </body>
+    <script>
+      function generatePdf()  {
+        console.log("Clicked on button")
+        var element = document.getElementById('body');
+        var opt = {
+          filename: "samin-batra-resume.pdf",
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+        };
+
+        html2pdf(element);
+      }
+    </script>
 </html>
