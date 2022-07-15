@@ -3,107 +3,246 @@
     <head>
         <meta charset="utf-8">
         <title>Samin's Personal Site</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+        <style>
+          .contact-details p {
+            margin-bottom: -5px;
+          }
+
+          body{
+            font-family: 'Tinos', serif;
+            border:1px solid black;
+          }
+
+          .container  {
+            padding-top:20px;
+          }
+
+          img{
+            height:100px;
+            width:100px;
+          }
+
+          @media only screen and (max-width:1023px) {
+            div.contact {
+              width:70%;
+            }
+          }
+
+          @media only screen and (min-width:1024px) {
+            div.contact {
+              width:100%;
+            }
+          }
+        </style>
     </head>
     <body>
-        <h1>Samin Batra</h1>
-        <p><i>Software Engineer at <em>Dell Technologies</em></i></p>
-        <p>I am a software engineer living in New Delhi. My interests include listening to music, playing games, working out and sketching. I love to read books and have read fiction, non-fiction and biographies. </p>
-        <hr>
-        <h3>Education</h3>
-        <table cellspacing="10">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">
+                <img src="samin.jpg" alt="photo">
+            </a>
+              <div class="contact">
+                <h4 class="text-center">Samin Batra</h4>
+
+                <p class="text-center"><strong>Contact:</strong> +91-9810116672</p>
+                <p class="text-center"><strong>Email:</strong> saminbatra1@gmail.com</p>
+
+              </div>
+
+            </nav>
+          <h5>Key Competencies</h5>
+          <hr>
+
+          <table>
             <tr>
-                <td>
+              <td>
+                <ul>
+                  <li>4 years of professional experience working as a full-stack developer.</li>
+                  <li>Strong technical skills with focus on <strong>Python</strong>, <strong>JavaScript</strong>, <strong>SQL</strong>, <strong>Angular</strong>, <strong>Spring Boot</strong>, <strong>Flask</strong>,
+                    <strong>Bootstrap</strong>, <strong>NodeJS</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Data Structures and Algorithms</strong>.
+                  </li>
+                  <li>
+                    Strong <strong>collaboration</strong> and <strong>communication skills</strong>. Ability to <strong>think outside the box</strong> and <strong>communicate complex ideas effectively</strong>.
+                  </li>
+                </ul>
+
+              </td>
+            </tr>
+          </table>
+          <h5>Education</h5>
+
+          <hr>
+          <table class="table table-borderless" id="education"  cellspacing="10">
+              <tr>
+                  <td>
+                      <strong>
+                          2014-2018
+                      </strong>
+                  </td>
+                  <td>
                     <strong>
-                        Shiv Nadar University (2014-2018)
+                        Shiv Nadar University, <br>
+                        B.Tech Computer Science with a Minor in Mathematics
+
                     </strong>
-                </td>
-                <td>
-                    B.Tech Computer Science with a Minor in Mathematics
-                </td>
-            </tr>
-            <tr>
-                <td>
+                  </td>
+                  <td>
+                      New Delhi, India
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <strong>
+                          2004-2014
+                      </strong>
+                  </td>
+                  <td>
                     <strong>
-                        Tagore International School
+                        Tagore International School <br>
+                        High School
                     </strong>
-                </td>
-                <td>
-                    High School
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        <h3>Work Experience</h3>
-        <table cellspacing="15">
-            <tr>
-                <td>
-                    <strong>
-                        Software Engineer - 2 at Dell Technologies (2019 - present)
-                    </strong>
-                </td>
-                <td>
-                    <ol>
-                        <li>Full-stack developer working on Time Tracking and Payroll Applications</li>
-                        <li>Technologies used:
-                            <ol>
-                                <li>Angular 7</li>
-                                <li>Spring Boot</li>
-                                <li>Python</li>
-                                <li>SQL Server</li>
-                                <li>Oracle MySQL</li>
-                            </ol>
-                        </li>
-                        <li>
-                            Collaborating with cross-functional teams
-                        </li>
-                        <li>
-                            DevOps
-                        </li>
-                        <li>
-                            Experience with Security Tools like Checkmarx, SonarQube and BlackDuck
-                        </li>
-                        <li>
-                            Developing applications for the cloud. I have worked primarily on PCF.
-                        </li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
-        <!-- <ul>
-            <li>
-                <h4>
-                    Software Engineer - 2 at Dell Technologies (2019 - present)
-                </h4>
-                <p>
-                   
-                </p>
-            </li>
-        </ul> -->
-        <hr>
-        <h3>Contact Me</h3>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/samin-batra/">LinkedIn</a></li>
-        </ul>
-        <hr>
-        <h3>Skills</h3>
-        <table cellspacing="15">
-            <tr>
-                <td>Python ⭐⭐⭐⭐</td>
-                <td>Java ⭐⭐⭐</td>
-                <td>JavaScript ⭐⭐</td>
-                
-            </tr>
-            <tr>
-                <td>C ⭐⭐⭐</td>
-                <td>SQL ⭐⭐⭐⭐</td>
-                <td>Angular ⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td>Spring Boot ⭐⭐⭐</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+                  </td>
+                  <td>
+                      New Delhi, India
+                  </td>
+              </tr>
+          </table>
+          <h5>Work Experience</h5>
+
+          <hr>
+          <table class="table table-borderless">
+              <tbody>
+
+                <tr>
+                    <td>
+                      <strong>
+                        April, 2022-<br>July, 2022
+                      </strong>
+                    </td>
+                    <td>
+                        <strong>
+                            Senior Software Engineer,<br> Dell Technologies
+                        </strong>
+                    </td>
+                    <td>
+                      Hyderabad, India
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Worked as a full stack developer in the Facilities space at Dell to enhance the ecosystem through the use of automation, data visualization and web applications.</li>
+                            <li>Leveraged the use of tools like Grafana and Splunk to improve Observability and Monitoring of applications
+                            </li>
+                            <li>
+                                Developed web applications using technologies like Python-Flask, ReactJS, and SQL Server
+                            </li>
+                            <li>
+                              Well versed with the product model way of working which involves collaboration with other engineers, conversations with business, decision making on the product roadmap and putting focus on CICD and security of applications.
+                            </li>
+
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <strong>
+                          October, 2019-<br>March, 2022
+                        </strong>
+                      </td>
+                      <td>
+                          <strong>
+                              Software Engineer-2,<br> Dell Technologies
+                          </strong>
+                      </td>
+                      <td>
+                        Hyderabad, India
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                      </td>
+                      <td>
+                          <ul>
+                              <li>Worked as a full-stack developer on Payroll applications. Responsibilities included writing, automation testing and deploying code to the cloud.</li>
+                              <li>Worked in technologies such as <strong>Python, Java, Spring Boot, Angular, SQL Server</strong>.
+                              </li>
+                              <li>
+                                Played a big role in <strong>modernizing</strong> the legacy <strong>Payroll</strong> applications - includes vastly improving user experience, decreasing the time taken to deliver requirements, reducing critical vulnerabilities and vastly decreasing the manual effort by IT through automating a lot of tasks.
+                              </li>
+
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <strong>
+                            July, 2018-<br>September, 2019
+                          </strong>
+                        </td>
+                        <td>
+                            <strong>
+                                Software Engineer-1,<br> Dell Technologies
+                            </strong>
+                        </td>
+                        <td>
+                          Hyderabad, India
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Worked as a back-end developer writing scripts in SQL Server for Payroll applications. Also worked on numerous automation tasks in Python using Pandas and Beautiful Soup.</li>
+                                <li>Created a pilot web-application in Angular and Spring Boot which served as a foundation stone for a re-write of a legacy payroll application used across 80 countries by more than 30000 people.
+                                </li>
+                                <li>
+                                  Played an integral in fulfilling a critical requirement which involved configuring complex business rules and validations for APJK region.
+                                </li>
+                                <li>
+                                  Finished as a runner-up at the <strong>2018 Dell Digital Hackathon</strong>.
+                                </li>
+
+                            </ul>
+                        </td>
+                      </tr>
+
+
+              </tbody>
+
+          </table>
+          <h5>Additional Information</h5>
+
+          <hr>
+
+          <table cellspacing="15">
+              <tr>
+                  <td>
+                    <ul>
+                      <li>
+                        Hobbies include art, outdoor-sports, reading and video games
+                      </li>
+                      <li>
+                        Gained recognition and awards at various points of academic and professional life – a testament to discipline and focus.
+
+
+                      </li>
+                    </ul>
+                  </td>
+
+              </tr>
+          </table>
+
+
+        </div>
+
     </body>
 </html>
